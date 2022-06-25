@@ -99,6 +99,9 @@
     <uiIconScale>1.2</uiIconScale>
     <techLevel>Industrial</techLevel>
 	<relicChance>1</relicChance>
+	<thingSetMakerTags>
+	<li>RewardStandardQualitySuper</li>
+	</thingSetMakerTags>
 	<tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
