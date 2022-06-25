@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <ThingDef ParentName="BaseMakeableGrenade">
+    <defName>Weapon_GrenadeNote7</defName>
+    <label>Samsung Galaxy Note 7</label>
+    <description>An ancient 21st century telecommunication device originating from the planet "earth", where all humanoids, mutant or not, originated from. According to records, while the device failed as the intended purpose as a telecommunication device due to a fault causing the internal battery to explode, this allowed the device to be used as a makeshift bomb, often with powerful results. \n\nThese devices are rare in planet earth, let alone in the rim, so merchants often pay with kidneys and lungs for a chance to use this device.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Note7</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.3</uiIconScale>
+    <soundInteract>Interact_Grenade</soundInteract>
+	<thingSetMakerTags>
+	<li>RewardStandardQualitySuper</li>
+	</thingSetMakerTags>
+	<tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+	  <MarketValue>2000</MarketValue>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+      <li>EmpireGrenadeDestructive</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+	
+    <verbs>
+      <li>
+        <label>throw Samsung galaxy note 7</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Proj_GrenadeNote7</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+	    <smeltProducts>
+      <Steel>10</Steel>
+    </smeltProducts>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+	
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Proj_GrenadeNote7</defName>
+		
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Note7</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius >6</explosionRadius >
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>400</damageAmountBase>
+			<explosionDelay>100</explosionDelay>
+		</projectile>
+	</ThingDef>
+
+</Defs>
+
